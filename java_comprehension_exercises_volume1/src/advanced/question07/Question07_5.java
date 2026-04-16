@@ -31,8 +31,10 @@ public class Question07_5 {
 			sum += prices[i] * amounts[i];
 		}
 		System.out.println("合計(税込)：" + (int) (sum * 1.1) + "円");
-		System.out.println("割引後合計(税込)：" + (int) (sum * 1.1 * 0.9) + "円");
+		if (sum >= 5000) {
 
+			System.out.println("割引後合計(税込)：" + (int) (sum * 1.1 * 0.9) + "円");
+		}
 	}
 
 }
